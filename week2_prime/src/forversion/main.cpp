@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-	int prime[100], n;
+	int  n;
 	cout << "Please input an integer for listing all the primes less than the integer:";
 	cin >> n;
 	cout << "Primes less than " << n << " are ";
