@@ -1,19 +1,34 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int n;
+  int n,i=1,j=i,k=1;
   while(cin>>n){
-       while(int i=1&&i<=n){
-         while(int j=i&&j<n)
-           cout<<" ";
+       while(i<=n){
+         while(j<n){
+           cout<<" ";j++;
+         }
          if(i==1)
            cout<<"*";
          else
-           while(int k=1&&k>=2*i)
-             cout<<"*";
-         cout<<endl;
+           while(k<2*i){
+             cout<<"*";k++;
+           }
+         cout<<endl;i++;j=i;k=1;
        }
-
-    ]
+       i=n-1;
+       while(i>=1){
+        j=i;
+        while(j<n){
+            cout<<" ";j++;
+        }
+        int k=1;
+        if(i==1)
+          cout<<"*";
+        else
+          while(k<2*i){
+          cout<<"*";k++;}
+        cout<<endl;i--;   
+       }
+  }
  return 0;
 }
